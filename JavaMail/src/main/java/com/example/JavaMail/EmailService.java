@@ -21,6 +21,7 @@ public class EmailService {
     @Async
     public boolean sendEmail(String to, String subject, String body, String attachmentPath) {
         try {
+            // TODO need enhance process
             MimeMessage message = mailSender.createMimeMessage();
             MimeMessageHelper helper = new MimeMessageHelper(message, true);
 
