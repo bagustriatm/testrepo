@@ -24,7 +24,7 @@ public class EmailService {
             // TODO need enhance process
             MimeMessage message = mailSender.createMimeMessage();
             MimeMessageHelper helper = new MimeMessageHelper(message, true);
-
+            System.out.println("test commit");
             helper.setTo(to);
             helper.setFrom("bagustri734@gmail.com");
             helper.setSubject(subject);
