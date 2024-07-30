@@ -25,6 +25,7 @@ public class EmailService {
             MimeMessage message = mailSender.createMimeMessage();
             MimeMessageHelper helper = new MimeMessageHelper(message, true);
             System.out.println("test commit");
+            System.out.println("");
             helper.setTo(to);
             helper.setFrom("bagustri734@gmail.com");
             helper.setSubject(subject);
